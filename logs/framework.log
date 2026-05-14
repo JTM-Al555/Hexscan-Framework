@@ -157,3 +157,171 @@
 2026-05-14 11:51:02,724 | INFO | Fetched https://uber.com/admin
 2026-05-14 11:51:05,930 | INFO | Subdomain scan completed for uber.com
 2026-05-14 11:51:08,522 | INFO | Recon completed in 13.52s
+2026-05-14 12:14:55,268 | INFO | Starting recon against youtube.com
+2026-05-14 12:15:02,813 | INFO | Fetched https://youtube.com/robots.txt
+2026-05-14 12:15:03,010 | INFO | Fetched https://youtube.com/graphql
+2026-05-14 12:15:03,023 | INFO | Fetched https://youtube.com/admin
+2026-05-14 12:15:03,036 | INFO | Fetched https://youtube.com/login
+2026-05-14 12:15:03,048 | INFO | Fetched https://youtube.com/auth
+2026-05-14 12:15:03,056 | INFO | Fetched https://youtube.com/sitemap.xml
+2026-05-14 12:15:03,099 | INFO | Async scan completed for youtube.com
+2026-05-14 12:15:03,850 | INFO | Fetched https://youtube.com/api
+2026-05-14 12:15:03,854 | INFO | Fetched https://youtube.com/
+2026-05-14 12:15:03,886 | INFO | Fetched https://youtube.com/register
+2026-05-14 12:15:04,239 | INFO | Analyzed JS file: https://www.youtube.com/s/desktop/47009d78/jsbin/fetch-polyfill.vflset/fetch-polyfill.js
+2026-05-14 12:15:04,252 | INFO | Analyzed JS file: https://www.youtube.com/s/desktop/47009d78/jsbin/web-animations-next-lite.min.vflset/web-animations-next-lite.min.js
+2026-05-14 12:15:04,255 | INFO | Analyzed JS file: https://www.youtube.com/s/desktop/47009d78/jsbin/www-i18n-constants-ar_EG.vflset/www-i18n-constants.js
+2026-05-14 12:15:04,298 | INFO | Analyzed JS file: https://www.youtube.com/s/desktop/47009d78/jsbin/scheduler.vflset/scheduler.js
+2026-05-14 12:15:04,302 | INFO | Analyzed JS file: https://www.youtube.com/s/desktop/47009d78/jsbin/spf.vflset/spf.js
+2026-05-14 12:15:04,304 | INFO | Analyzed JS file: https://www.youtube.com/s/desktop/47009d78/jsbin/intersection-observer.min.vflset/intersection-observer.min.js
+2026-05-14 12:15:04,307 | INFO | Analyzed JS file: https://www.youtube.com/s/desktop/47009d78/jsbin/network.vflset/network.js
+2026-05-14 12:15:04,331 | INFO | Analyzed JS file: https://www.youtube.com/s/desktop/47009d78/jsbin/webcomponents-all-noPatch.vflset/webcomponents-all-noPatch.js
+2026-05-14 12:15:05,444 | INFO | Fetched https://youtube.com/dashboard
+2026-05-14 12:15:05,953 | INFO | Analyzed JS file: https://www.youtube.com/s/_/ytmainappweb/_/js/k=ytmainappweb.kevlar_base.en_US.81_ruFHWKHQ.es5.O/am=AAAAEAAABAAJ/d=1/rs=AGKMywFTxJ7y0et5AKnhMLLw3cvESNcKxg/m=kevlar_base_module,kevlar_main_module,kevlar_base_sync_mod_chunk
+2026-05-14 12:15:07,765 | INFO | Subdomain scan completed for youtube.com
+2026-05-14 12:15:08,165 | INFO | Recon completed in 12.88s
+2026-05-14 12:41:15,356 | INFO | Starting recon against uber.com
+2026-05-14 12:41:22,706 | INFO | Async scan completed for uber.com
+2026-05-14 12:41:22,904 | INFO | Fetched https://uber.com/admin
+2026-05-14 12:41:22,907 | INFO | Fetched https://uber.com/api
+2026-05-14 12:41:22,908 | INFO | Fetched https://uber.com/sitemap.xml
+2026-05-14 12:41:22,917 | INFO | Fetched https://uber.com/dashboard
+2026-05-14 12:41:22,919 | INFO | Fetched https://uber.com/graphql
+2026-05-14 12:41:22,923 | INFO | Fetched https://uber.com/login
+2026-05-14 12:41:22,923 | INFO | Fetched https://uber.com/robots.txt
+2026-05-14 12:41:23,176 | INFO | Fetched https://uber.com/auth
+2026-05-14 12:41:23,654 | INFO | Fetched https://uber.com/
+2026-05-14 12:41:23,655 | INFO | Fetched https://uber.com/register
+2026-05-14 12:41:26,052 | INFO | Subdomain scan completed for uber.com
+2026-05-14 12:41:29,451 | INFO | Recon completed in 14.07s
+2026-05-14 12:46:37,902 | INFO | Starting recon against uber.com
+2026-05-14 12:46:45,142 | INFO | Async scan completed for uber.com
+2026-05-14 12:46:45,305 | INFO | Fetched https://uber.com/robots.txt
+2026-05-14 12:46:45,320 | INFO | Fetched https://uber.com/login
+2026-05-14 12:46:45,321 | INFO | Fetched https://uber.com/graphql
+2026-05-14 12:46:45,324 | INFO | Fetched https://uber.com/dashboard
+2026-05-14 12:46:45,639 | INFO | Fetched https://uber.com/api
+2026-05-14 12:46:45,642 | INFO | Fetched https://uber.com/sitemap.xml
+2026-05-14 12:46:46,528 | INFO | Fetched https://uber.com/auth
+2026-05-14 12:46:46,529 | INFO | Fetched https://uber.com/register
+2026-05-14 12:46:46,530 | INFO | Fetched https://uber.com/
+2026-05-14 12:46:46,531 | INFO | Fetched https://uber.com/admin
+2026-05-14 12:46:50,287 | INFO | Subdomain scan completed for uber.com
+2026-05-14 12:46:52,999 | INFO | Recon completed in 15.08s
+2026-05-14 12:52:21,900 | INFO | Starting recon against uber.com
+2026-05-14 12:52:29,453 | INFO | Fetched https://uber.com/dashboard
+2026-05-14 12:52:29,455 | INFO | Fetched https://uber.com/graphql
+2026-05-14 12:52:29,456 | INFO | Fetched https://uber.com/admin
+2026-05-14 12:52:29,458 | INFO | Fetched https://uber.com/login
+2026-05-14 12:52:29,459 | INFO | Fetched https://uber.com/register
+2026-05-14 12:52:29,460 | INFO | Fetched https://uber.com/
+2026-05-14 12:52:30,141 | INFO | Async scan completed for uber.com
+2026-05-14 12:52:30,207 | INFO | Fetched https://uber.com/sitemap.xml
+2026-05-14 12:52:30,208 | INFO | Fetched https://uber.com/robots.txt
+2026-05-14 12:52:30,486 | INFO | Fetched https://uber.com/auth
+2026-05-14 12:52:30,491 | INFO | Fetched https://uber.com/api
+2026-05-14 12:52:32,695 | INFO | Subdomain scan completed for uber.com
+2026-05-14 12:52:35,110 | INFO | Recon completed in 13.16s
+2026-05-14 12:55:41,825 | INFO | Starting recon against uber.com
+2026-05-14 12:55:48,390 | INFO | Async scan completed for uber.com
+2026-05-14 12:55:48,435 | INFO | Fetched https://uber.com/register
+2026-05-14 12:55:48,436 | INFO | Fetched https://uber.com/sitemap.xml
+2026-05-14 12:55:48,439 | INFO | Fetched https://uber.com/api
+2026-05-14 12:55:48,440 | INFO | Fetched https://uber.com/auth
+2026-05-14 12:55:48,442 | INFO | Fetched https://uber.com/login
+2026-05-14 12:55:48,443 | INFO | Fetched https://uber.com/dashboard
+2026-05-14 12:55:48,454 | INFO | Fetched https://uber.com/robots.txt
+2026-05-14 12:55:48,787 | INFO | Fetched https://uber.com/admin
+2026-05-14 12:55:48,788 | INFO | Fetched https://uber.com/graphql
+2026-05-14 12:55:48,789 | INFO | Fetched https://uber.com/
+2026-05-14 12:55:51,977 | INFO | Subdomain scan completed for uber.com
+2026-05-14 12:55:54,271 | INFO | Recon completed in 12.43s
+2026-05-14 12:59:18,540 | INFO | Starting recon against uber.com
+2026-05-14 12:59:25,252 | INFO | Fetched https://uber.com/sitemap.xml
+2026-05-14 12:59:25,252 | INFO | Async scan completed for uber.com
+2026-05-14 12:59:25,266 | INFO | Fetched https://uber.com/api
+2026-05-14 12:59:25,268 | INFO | Fetched https://uber.com/login
+2026-05-14 12:59:25,271 | INFO | Fetched https://uber.com/register
+2026-05-14 12:59:25,273 | INFO | Fetched https://uber.com/robots.txt
+2026-05-14 12:59:25,277 | INFO | Fetched https://uber.com/graphql
+2026-05-14 12:59:25,278 | INFO | Fetched https://uber.com/
+2026-05-14 12:59:25,280 | INFO | Fetched https://uber.com/auth
+2026-05-14 12:59:25,568 | INFO | Fetched https://uber.com/admin
+2026-05-14 12:59:26,103 | INFO | Fetched https://uber.com/dashboard
+2026-05-14 12:59:28,278 | INFO | Recon completed in 9.7s
+2026-05-14 13:03:22,549 | INFO | Starting recon against uber.com
+2026-05-14 13:03:29,382 | INFO | Fetched https://uber.com/register
+2026-05-14 13:03:29,383 | INFO | Fetched https://uber.com/auth
+2026-05-14 13:03:29,384 | INFO | Fetched https://uber.com/admin
+2026-05-14 13:03:29,385 | INFO | Fetched https://uber.com/robots.txt
+2026-05-14 13:03:29,386 | INFO | Fetched https://uber.com/dashboard
+2026-05-14 13:03:29,387 | INFO | Fetched https://uber.com/sitemap.xml
+2026-05-14 13:03:29,390 | INFO | Fetched https://uber.com/login
+2026-05-14 13:03:29,392 | INFO | Async scan completed for uber.com
+2026-05-14 13:03:29,802 | INFO | Fetched https://uber.com/
+2026-05-14 13:03:29,804 | INFO | Fetched https://uber.com/api
+2026-05-14 13:03:29,805 | INFO | Fetched https://uber.com/graphql
+2026-05-14 13:03:32,464 | INFO | Subdomain scan completed for uber.com
+2026-05-14 13:03:34,883 | INFO | Recon completed in 12.31s
+2026-05-14 13:08:21,554 | INFO | Starting recon against uber.com
+2026-05-14 13:08:28,970 | INFO | Async scan completed for uber.com
+2026-05-14 13:08:29,156 | INFO | Fetched https://uber.com/api
+2026-05-14 13:08:29,157 | INFO | Fetched https://uber.com/robots.txt
+2026-05-14 13:08:29,158 | INFO | Fetched https://uber.com/auth
+2026-05-14 13:08:29,159 | INFO | Fetched https://uber.com/login
+2026-05-14 13:08:29,160 | INFO | Fetched https://uber.com/
+2026-05-14 13:08:29,162 | INFO | Fetched https://uber.com/graphql
+2026-05-14 13:08:29,428 | INFO | Fetched https://uber.com/sitemap.xml
+2026-05-14 13:08:30,076 | INFO | Fetched https://uber.com/register
+2026-05-14 13:08:30,077 | INFO | Fetched https://uber.com/admin
+2026-05-14 13:08:30,078 | INFO | Fetched https://uber.com/dashboard
+2026-05-14 13:08:32,310 | INFO | Subdomain scan completed for uber.com
+2026-05-14 13:08:35,073 | INFO | Recon completed in 13.5s
+2026-05-14 13:09:34,336 | INFO | Starting recon against uber.com
+2026-05-14 13:09:51,122 | INFO | Starting recon against uber.com
+2026-05-14 13:17:00,921 | INFO | Starting recon against uber.com
+2026-05-14 13:17:07,900 | INFO | Fetched https://uber.com/register
+2026-05-14 13:17:07,901 | INFO | Fetched https://uber.com/admin
+2026-05-14 13:17:07,901 | INFO | Fetched https://uber.com/graphql
+2026-05-14 13:17:07,902 | INFO | Fetched https://uber.com/login
+2026-05-14 13:17:07,903 | INFO | Fetched https://uber.com/robots.txt
+2026-05-14 13:17:07,903 | INFO | Fetched https://uber.com/
+2026-05-14 13:17:07,905 | INFO | Async scan completed for uber.com
+2026-05-14 13:17:08,806 | INFO | Fetched https://uber.com/sitemap.xml
+2026-05-14 13:17:08,811 | INFO | Fetched https://uber.com/api
+2026-05-14 13:17:08,811 | INFO | Fetched https://uber.com/auth
+2026-05-14 13:17:08,812 | INFO | Fetched https://uber.com/dashboard
+2026-05-14 13:17:10,924 | INFO | Subdomain scan completed for uber.com
+2026-05-14 13:17:15,307 | INFO | Recon completed in 14.37s
+2026-05-14 13:21:06,156 | INFO | Starting recon against uber.com
+2026-05-14 13:21:14,349 | INFO | Async scan completed for uber.com
+2026-05-14 13:21:14,426 | INFO | Fetched https://uber.com/robots.txt
+2026-05-14 13:21:14,428 | INFO | Fetched https://uber.com/dashboard
+2026-05-14 13:21:14,431 | INFO | Fetched https://uber.com/auth
+2026-05-14 13:21:14,966 | INFO | Fetched https://uber.com/graphql
+2026-05-14 13:21:14,969 | INFO | Fetched https://uber.com/api
+2026-05-14 13:21:14,970 | INFO | Fetched https://uber.com/sitemap.xml
+2026-05-14 13:21:15,403 | INFO | Fetched https://uber.com/admin
+2026-05-14 13:21:15,405 | INFO | Fetched https://uber.com/
+2026-05-14 13:21:15,406 | INFO | Fetched https://uber.com/register
+2026-05-14 13:21:15,817 | INFO | Fetched https://uber.com/login
+2026-05-14 13:21:20,335 | INFO | Screenshot saved: https://uber.com
+2026-05-14 13:21:30,715 | INFO | Screenshot saved: http://uber.com
+2026-05-14 13:21:32,912 | INFO | Subdomain scan completed for uber.com
+2026-05-14 13:21:35,616 | INFO | Recon completed in 29.44s
+2026-05-14 13:24:41,252 | INFO | Starting recon against uber.com
+2026-05-14 13:24:48,559 | INFO | Async scan completed for uber.com
+2026-05-14 13:24:48,914 | INFO | Fetched https://uber.com/login
+2026-05-14 13:24:48,915 | INFO | Fetched https://uber.com/sitemap.xml
+2026-05-14 13:24:48,917 | INFO | Fetched https://uber.com/dashboard
+2026-05-14 13:24:49,526 | INFO | Fetched https://uber.com/graphql
+2026-05-14 13:24:49,527 | INFO | Fetched https://uber.com/
+2026-05-14 13:24:49,536 | INFO | Fetched https://uber.com/register
+2026-05-14 13:24:49,615 | INFO | Fetched https://uber.com/robots.txt
+2026-05-14 13:24:49,944 | INFO | Fetched https://uber.com/admin
+2026-05-14 13:24:49,949 | INFO | Fetched https://uber.com/api
+2026-05-14 13:24:50,239 | INFO | Fetched https://uber.com/auth
+2026-05-14 13:24:50,732 | INFO | Screenshot saved: https://uber.com
+2026-05-14 13:24:53,479 | INFO | Screenshot saved: http://uber.com
+2026-05-14 13:24:55,669 | INFO | Subdomain scan completed for uber.com
+2026-05-14 13:24:59,700 | INFO | Recon completed in 18.44s

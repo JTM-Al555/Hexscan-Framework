@@ -1,0 +1,2 @@
+[console_scripts]
+hexscan = hexscan.main:cli_main
