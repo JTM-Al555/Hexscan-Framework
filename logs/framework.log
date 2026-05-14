@@ -77,3 +77,83 @@
 2026-05-12 15:39:23,289 | INFO | Fetched https://chatgpt.com/robots.txt
 2026-05-12 15:39:25,366 | INFO | Async scan completed for chatgpt.com
 2026-05-12 15:39:26,906 | INFO | Subdomain scan completed for chatgpt.com
+2026-05-12 16:02:03,629 | INFO | Starting recon for chatgpt.com
+2026-05-12 16:02:08,998 | INFO | Fetched https://chatgpt.com/
+2026-05-12 16:02:09,012 | INFO | Fetched https://chatgpt.com/sitemap.xml
+2026-05-12 16:02:09,013 | INFO | Fetched https://chatgpt.com/dashboard
+2026-05-12 16:02:09,013 | INFO | Fetched https://chatgpt.com/api
+2026-05-12 16:02:09,016 | INFO | Fetched https://chatgpt.com/admin
+2026-05-12 16:02:09,022 | INFO | Fetched https://chatgpt.com/graphql
+2026-05-12 16:02:09,023 | INFO | Fetched https://chatgpt.com/auth
+2026-05-12 16:02:09,023 | INFO | Fetched https://chatgpt.com/login
+2026-05-12 16:02:09,023 | INFO | Fetched https://chatgpt.com/register
+2026-05-12 16:02:09,025 | INFO | Fetched https://chatgpt.com/robots.txt
+2026-05-12 16:02:35,864 | INFO | Async scan completed for chatgpt.com
+2026-05-12 16:02:38,247 | INFO | Subdomain scan completed for chatgpt.com
+2026-05-12 16:42:16,633 | INFO | Starting recon for uber.com
+2026-05-12 16:42:22,138 | INFO | Fetched https://uber.com/sitemap.xml
+2026-05-12 16:42:22,141 | INFO | Fetched https://uber.com/api
+2026-05-12 16:42:22,142 | INFO | Fetched https://uber.com/register
+2026-05-12 16:42:22,148 | INFO | Fetched https://uber.com/auth
+2026-05-12 16:42:22,155 | INFO | Fetched https://uber.com/login
+2026-05-12 16:42:22,340 | INFO | Fetched https://uber.com/robots.txt
+2026-05-12 16:42:22,385 | INFO | Fetched https://uber.com/
+2026-05-12 16:42:22,499 | INFO | Fetched https://uber.com/admin
+2026-05-12 16:42:22,683 | INFO | Fetched https://uber.com/graphql
+2026-05-12 16:42:23,419 | INFO | Fetched https://uber.com/dashboard
+2026-05-12 16:42:26,990 | INFO | Async scan completed for uber.com
+2026-05-12 16:42:28,747 | INFO | Subdomain scan completed for uber.com
+2026-05-13 13:13:49,620 | INFO | Starting recon for chatgpt.com
+2026-05-13 13:13:57,020 | INFO | Fetched https://chatgpt.com/admin
+2026-05-13 13:13:57,041 | INFO | Fetched https://chatgpt.com/
+2026-05-13 13:13:57,042 | INFO | Fetched https://chatgpt.com/auth
+2026-05-13 13:13:57,052 | INFO | Fetched https://chatgpt.com/sitemap.xml
+2026-05-13 13:13:57,054 | INFO | Fetched https://chatgpt.com/dashboard
+2026-05-13 13:13:57,054 | INFO | Fetched https://chatgpt.com/graphql
+2026-05-13 13:13:57,057 | INFO | Fetched https://chatgpt.com/login
+2026-05-13 13:13:57,058 | INFO | Fetched https://chatgpt.com/api
+2026-05-13 13:13:57,059 | INFO | Fetched https://chatgpt.com/register
+2026-05-13 13:13:57,248 | INFO | Fetched https://chatgpt.com/robots.txt
+2026-05-13 13:14:21,404 | INFO | Async scan completed for chatgpt.com
+2026-05-13 13:14:23,771 | INFO | Subdomain scan completed for chatgpt.com
+2026-05-14 11:26:47,011 | INFO | Starting recon for chatgpt.com
+2026-05-14 11:26:52,516 | INFO | Fetched https://chatgpt.com/admin
+2026-05-14 11:26:52,571 | INFO | Fetched https://chatgpt.com/login
+2026-05-14 11:26:52,573 | INFO | Fetched https://chatgpt.com/
+2026-05-14 11:26:52,578 | INFO | Fetched https://chatgpt.com/dashboard
+2026-05-14 11:26:52,594 | INFO | Fetched https://chatgpt.com/register
+2026-05-14 11:26:52,595 | INFO | Fetched https://chatgpt.com/auth
+2026-05-14 11:26:52,603 | INFO | Fetched https://chatgpt.com/api
+2026-05-14 11:26:52,812 | INFO | Fetched https://chatgpt.com/graphql
+2026-05-14 11:26:52,826 | INFO | Fetched https://chatgpt.com/robots.txt
+2026-05-14 11:26:52,826 | INFO | Fetched https://chatgpt.com/sitemap.xml
+2026-05-14 11:27:10,598 | INFO | Async scan completed for chatgpt.com
+2026-05-14 11:27:13,801 | INFO | Subdomain scan completed for chatgpt.com
+2026-05-14 11:31:19,290 | INFO | Starting recon for chatgpt.com
+2026-05-14 11:31:24,423 | INFO | Fetched https://chatgpt.com/admin
+2026-05-14 11:31:24,423 | INFO | Fetched https://chatgpt.com/robots.txt
+2026-05-14 11:31:24,424 | INFO | Fetched https://chatgpt.com/login
+2026-05-14 11:31:24,425 | INFO | Fetched https://chatgpt.com/api
+2026-05-14 11:31:24,425 | INFO | Fetched https://chatgpt.com/dashboard
+2026-05-14 11:31:24,425 | INFO | Fetched https://chatgpt.com/graphql
+2026-05-14 11:31:24,426 | INFO | Fetched https://chatgpt.com/auth
+2026-05-14 11:31:24,426 | INFO | Fetched https://chatgpt.com/register
+2026-05-14 11:31:24,426 | INFO | Fetched https://chatgpt.com/
+2026-05-14 11:31:24,427 | INFO | Fetched https://chatgpt.com/sitemap.xml
+2026-05-14 11:31:24,723 | INFO | Async scan completed for chatgpt.com
+2026-05-14 11:31:26,848 | INFO | Subdomain scan completed for chatgpt.com
+2026-05-14 11:31:35,061 | INFO | Recon completed in 15.76s
+2026-05-14 11:50:54,952 | INFO | Starting recon against uber.com
+2026-05-14 11:51:02,323 | INFO | Fetched https://uber.com/
+2026-05-14 11:51:02,329 | INFO | Fetched https://uber.com/api
+2026-05-14 11:51:02,330 | INFO | Fetched https://uber.com/register
+2026-05-14 11:51:02,334 | INFO | Fetched https://uber.com/dashboard
+2026-05-14 11:51:02,342 | INFO | Fetched https://uber.com/graphql
+2026-05-14 11:51:02,344 | INFO | Fetched https://uber.com/sitemap.xml
+2026-05-14 11:51:02,345 | INFO | Fetched https://uber.com/auth
+2026-05-14 11:51:02,616 | INFO | Fetched https://uber.com/robots.txt
+2026-05-14 11:51:02,719 | INFO | Async scan completed for uber.com
+2026-05-14 11:51:02,723 | INFO | Fetched https://uber.com/login
+2026-05-14 11:51:02,724 | INFO | Fetched https://uber.com/admin
+2026-05-14 11:51:05,930 | INFO | Subdomain scan completed for uber.com
+2026-05-14 11:51:08,522 | INFO | Recon completed in 13.52s

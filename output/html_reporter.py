@@ -1,4 +1,5 @@
-from pathlib import Path
+import json
+from datetime import datetime
 
 from config.settings import OUTPUT_DIR
 
@@ -14,51 +15,24 @@ class HTMLReporter:
         self.domain = domain
         self.results = results
 
-    def build_section(
-        self,
-        title,
-        content
-    ):
-
-        return f"""
-        <div class="section">
-            <h2>{title}</h2>
-            <pre>{content}</pre>
-        </div>
-        """
-
     def generate(self):
 
-        sections = ""
-
-        for key, value in self.results.items():
-
-            sections += self.build_section(
-                key,
-                value
-            )
-
         html = f"""
-        <!DOCTYPE html>
         <html>
 
         <head>
-            <title>Recon Report</title>
+
+            <title>
+                AI Recon Report
+            </title>
 
             <style>
 
                 body {{
                     background-color: #0f172a;
-                    color: #e2e8f0;
+                    color: white;
                     font-family: Arial;
-                    padding: 30px;
-                }}
-
-                .section {{
-                    background: #1e293b;
-                    padding: 20px;
-                    margin-bottom: 20px;
-                    border-radius: 10px;
+                    padding: 40px;
                 }}
 
                 h1 {{
@@ -70,7 +44,17 @@ class HTMLReporter:
                 }}
 
                 pre {{
-                    white-space: pre-wrap;
+                    background: #1e293b;
+                    padding: 15px;
+                    border-radius: 10px;
+                    overflow-x: auto;
+                }}
+
+                img {{
+                    margin-top: 20px;
+                    border-radius: 10px;
+                    width: 100%;
+                    max-width: 1200px;
                 }}
 
             </style>
@@ -80,14 +64,53 @@ class HTMLReporter:
         <body>
 
             <h1>
-                AI Recon Report:
-                {self.domain}
+                AI-Powered Recon Report
             </h1>
 
-            {sections}
+            <p>
+                Target:
+                {self.domain}
+            </p>
 
+            <p>
+                Generated:
+                {datetime.utcnow()}
+            </p>
+        """
+
+        for key, value in (
+            self.results.items()
+        ):
+
+            html += f"""
+            <h2>{key}</h2>
+
+            <pre>
+{json.dumps(value, indent=4)}
+            </pre>
+            """
+
+        screenshots = self.results.get(
+            "screenshots",
+            []
+        )
+
+        if screenshots:
+
+            html += """
+            <h2>
+                Screenshots
+            </h2>
+            """
+
+            for screenshot in screenshots:
+
+                html += f"""
+                <img src="../{screenshot}">
+                """
+
+        html += """
         </body>
-
         </html>
         """
 

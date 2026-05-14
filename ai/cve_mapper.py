@@ -1,26 +1,17 @@
-CVE_DATABASE = {
-    "Apache": [
-        "Example CVE: CVE-2021-41773"
-    ],
-
-    "PHP": [
-        "Example CVE: CVE-2019-11043"
-    ],
-
-    "Nginx": [
-        "Example CVE: CVE-2021-23017"
-    ]
-}
+from ai.cve_lookup import (
+    CVELookup
+)
 
 
 class CVEMapper:
 
-    def __init__(
-        self,
-        technologies
-    ):
+    def __init__(self, technologies):
 
-        self.technologies = technologies
+        self.technologies = (
+            technologies
+        )
+
+        self.lookup = CVELookup()
 
     def map_cves(self):
 
@@ -28,10 +19,12 @@ class CVEMapper:
 
         for tech in self.technologies:
 
-            if tech in CVE_DATABASE:
-
-                results[tech] = (
-                    CVE_DATABASE[tech]
+            cves = (
+                self.lookup.search(
+                    tech
                 )
+            )
+
+            results[tech] = cves
 
         return results

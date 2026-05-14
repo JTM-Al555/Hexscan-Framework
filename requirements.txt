@@ -1,0 +1,11 @@
+rich
+httpx
+dnspython
+python-whois
+beautifulsoup4
+playwright
+openai
+pytest
+fastapi
+uvicorn
+jinja2

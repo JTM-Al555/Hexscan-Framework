@@ -69,7 +69,7 @@ ai-recon-framework/
 ## Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ai-recon-framework.git
+git clone https://github.com/JTM-Al555/ai-recon-framework.git
 ```
 
 ## Enter Project
