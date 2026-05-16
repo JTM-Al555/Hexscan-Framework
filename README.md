@@ -71,7 +71,7 @@ It combines:
 ### Windows
 
 ```powershell
-git clone https://github.com/yourusername/hexscan.git
+git clone https://github.com/JTM-Al555/hexscan.git
 
 cd hexscan
 
