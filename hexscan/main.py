@@ -24,7 +24,7 @@ from core.whois_lookup import WhoisLookup
 from core.dir_fuzzer import DirectoryFuzzer
 from core.waf_detector import WAFDetector
 from core.parameter_discovery import ParameterDiscovery
-from database.database import DatabaseManager
+from .database.database import DatabaseManager
 
 from output.html_reporter import HTMLReporter
 from output.json_reporter import JSONReporter
