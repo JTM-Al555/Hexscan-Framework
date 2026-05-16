@@ -1,183 +1,300 @@
-# AI-Powered Recon Framework
+# HEXSCAN
 
-An advanced cybersecurity reconnaissance framework built with Python.
+> AI-Powered Reconnaissance & Attack Surface Mapping Framework
 
-This project automates reconnaissance workflows including:
+HEXSCAN is an advanced Python-based reconnaissance framework built for security research, attack surface analysis, and authorized defensive assessments.
 
-- DNS enumeration
-- HTTP fingerprinting
-- Port scanning
-- SSL analysis
-- Subdomain discovery
-- Web crawling
-- JavaScript endpoint extraction
-- Technology fingerprinting
-- AI-generated security analysis
-- Automated reporting
-- Screenshot collection
-
----
-
-# Features
-
-## Reconnaissance
-- Async port scanning
-- DNS lookups
-- WHOIS analysis
-- HTTP probing
-- Security header analysis
-- SSL certificate inspection
-
-## Web Analysis
-- Endpoint crawling
+It combines:
+- asynchronous scanning
+- web crawling
 - JavaScript analysis
-- Hidden API discovery
-- Technology fingerprinting
-
-## AI Features
-- Risk scoring
-- AI-generated findings
-- Security recommendations
-
-## Reporting
-- JSON reports
-- Markdown reports
-- HTML reports
-- Screenshot artifacts
+- risk scoring
+- technology fingerprinting
+- AI-powered reporting
+- attack surface discovery
+- professional reporting
 
 ---
 
-# Project Structure
+# FEATURES
 
-```bash
-ai-recon-framework/
-│
-├── ai/
-├── core/
-├── output/
-├── utils/
-├── config/
-├── tests/
-├── main.py
-└── README.md
-```
+## CORE RECON
+- DNS Enumeration
+- WHOIS Lookup
+- HTTP Probing
+- SSL/TLS Analysis
+- Async Port Scanning
+- Subdomain Enumeration
+- Web Crawling
+- Directory Discovery
+- Parameter Discovery
 
 ---
 
-# Installation
+## WEB ANALYSIS
+- JavaScript Endpoint Extraction
+- Secret Detection
+- Security Header Analysis
+- Technology Fingerprinting
+- WAF Detection
 
-## Clone Repository
+---
 
-```bash
-git clone https://github.com/JTM-Al555/ai-recon-framework.git
-```
+## RISK ENGINE
+- Risk Scoring
+- Severity Classification
+- Security Findings
+- Attack Surface Analysis
 
-## Enter Project
+---
 
-```bash
-cd ai-recon-framework
-```
+## AI FEATURES
+- AI-Powered Analysis
+- Executive Summary
+- Automated Findings Overview
 
-## Create Virtual Environment
+---
+
+## REPORTING
+- HTML Reports
+- JSON Reports
+- Markdown Reports
+- PDF Reports
+- Scan History Database
+
+---
+
+# INSTALLATION
+
+## Clone Repository + Setup Environment
 
 ### Windows
 
 ```powershell
+git clone https://github.com/yourusername/hexscan.git
+
+cd hexscan
+
 python -m venv venv
-.\venv\Scripts\Activate.ps1
-```
 
-### Linux / Mac
+venv\Scripts\activate
 
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
----
-
-# Install Dependencies
-
-```bash
 pip install -r requirements.txt
 ```
 
 ---
 
-# Install Playwright
+### Linux / macOS
 
 ```bash
-playwright install
+git clone https://github.com/JTM-Al555/hexscan.git
+
+cd hexscan
+
+python3 -m venv venv
+
+source venv/bin/activate
+
+pip install -r requirements.txt
 ```
 
 ---
 
-# Usage
+# USAGE
+
+## Basic Scan
 
 ```bash
-python main.py
-```
-
-Enter a target domain:
-
-```bash
-chatgpt.com
+hexscan example.com
 ```
 
 ---
 
-# Generated Reports
-
-Reports are automatically saved inside:
+## Deep Scan
 
 ```bash
+hexscan example.com --deep
+```
+
+---
+
+## Fast Mode
+
+```bash
+hexscan example.com --fast
+```
+
+---
+
+## Disable JavaScript Analysis
+
+```bash
+hexscan example.com --no-js
+```
+
+---
+
+## JSON Output
+
+```bash
+hexscan example.com --json
+```
+
+---
+
+# OUTPUT
+
+HEXSCAN generates reports inside:
+
+```text
 output/
 ```
 
-Including:
-- HTML reports
-- Markdown reports
-- JSON reports
-- Screenshots
+Generated formats:
+- HTML
+- JSON
+- Markdown
+- PDF
 
 ---
 
-# Example Features
+# PROJECT STRUCTURE
 
-## Screenshot Collection
-Automatically captures screenshots of discovered pages.
-
-## JavaScript Analysis
-Extracts hidden endpoints and API paths from JS files.
-
-## AI Analysis
-Generates automated security summaries and recommendations.
+```text
+HEXSCAN/
+│
+├── ai/
+│   ├── analyzer.py
+│   └── cve_mapper.py
+│
+├── core/
+│   ├── async_scanner.py
+│   ├── dir_fuzzer.py
+│   ├── dns_enum.py
+│   ├── headers_analyzer.py
+│   ├── http_probe.py
+│   ├── js_analyzer.py
+│   ├── parameter_discovery.py
+│   ├── risk_engine.py
+│   ├── screenshot.py
+│   ├── ssl_analyzer.py
+│   ├── subdomain_enum.py
+│   ├── tech_fingerprint.py
+│   ├── waf_detector.py
+│   ├── web_crawler.py
+│   └── whois_lookup.py
+│
+├── dashboard/
+│   └── app.py
+│
+├── database/
+│   └── database.py
+│
+├── output/
+│
+├── utils/
+│   ├── banner.py
+│   ├── cli.py
+│   ├── helpers.py
+│   ├── logger.py
+│   └── ui.py
+│
+├── main.py
+├── requirements.txt
+├── setup.py
+└── README.md
+```
 
 ---
 
-# Security Disclaimer
+# EXAMPLE FEATURES
 
-This tool is for:
-- educational purposes,
-- authorized testing,
-- research environments only.
+## Risk Analysis
 
-Do NOT use against systems without permission.
-
----
-
-# Future Improvements
-
-- FastAPI dashboard
-- Docker support
-- Shodan integration
-- NVD CVE integration
-- PDF reporting
-- Plugin system
-- Distributed scanning
+```json
+{
+  "risk_score": 52,
+  "risk_level": "High"
+}
+```
 
 ---
 
-# License
+## WAF Detection
+
+```json
+{
+  "detected": true,
+  "wafs": [
+    "Cloudflare"
+  ]
+}
+```
+
+---
+
+## Directory Discovery
+
+```json
+{
+  "directories": [
+    "/admin",
+    "/dashboard",
+    "/api"
+  ]
+}
+```
+
+---
+
+# DASHBOARD
+
+Start the dashboard:
+
+```bash
+uvicorn dashboard.app:app --reload
+```
+
+Then open:
+
+```text
+http://127.0.0.1:8000
+```
+
+---
+
+# DISCLAIMER
+
+HEXSCAN is intended ONLY for:
+- authorized security testing
+- defensive security research
+- educational purposes
+
+Do NOT use this tool against systems you do not own or have explicit permission to assess.
+
+The developer assumes no responsibility for misuse.
+
+---
+
+# ROADMAP
+
+- Advanced Playwright Browser Engine
+- Real-Time Dashboard
+- Historical Scan Diffing
+- Multi-Target Scanning
+- Enhanced AI Reporting
+- Visual Analytics
+- Expanded Secret Detection
+- Improved Asset Discovery
+
+---
+
+# LICENSE
 
 MIT License
+
+---
+
+# HEXSCAN
+
+> Professional Reconnaissance Framework for Modern Attack Surface Analysis

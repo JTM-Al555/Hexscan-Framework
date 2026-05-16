@@ -46,7 +46,8 @@ class HTTPProbe:
                         "url": str(response.url),
                         "status_code": response.status_code,
                         "headers": self.collect_headers(response),
-                        "response_size": len(response.text)
+                        "response_size": len(response.text),
+                        "body": response.text
                     }
 
             except Exception as error:

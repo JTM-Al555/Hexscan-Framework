@@ -21,6 +21,10 @@ from core.subdomain_enum import SubdomainEnumerator
 from core.tech_fingerprint import TechnologyFingerprinter
 from core.web_crawler import WebCrawler
 from core.whois_lookup import WhoisLookup
+from core.dir_fuzzer import DirectoryFuzzer
+from core.waf_detector import WAFDetector
+from core.parameter_discovery import ParameterDiscovery
+from database.database import DatabaseManager
 
 from output.html_reporter import HTMLReporter
 from output.json_reporter import JSONReporter
@@ -31,6 +35,7 @@ from utils.cli import get_args
 from utils.helpers import validate_domain
 from utils.logger import logger
 from output.pdf_reporter import PDFReporter
+from core.risk_engine import RiskEngine
 
 # ✅ ADDED UI SYSTEM
 from utils.ui import show_header, section, task
@@ -86,6 +91,11 @@ class ReconFramework:
 
             self.generate_reports()
 
+            DatabaseManager().save_scan(
+    self.domain,
+    self.results
+)
+
             self.show_statistics()
 
             return self.results
@@ -126,12 +136,14 @@ class ReconFramework:
             task_id = progress.add_task("[cyan]Scanning...", total=4)
 
             crawl_task = WebCrawler(self.domain).crawl()
+            dir_task = DirectoryFuzzer(self.domain).run()
             js_task = JavaScriptAnalyzer(self.domain).run()
             screenshot_task = ScreenshotEngine(self.domain).run()
             port_task = AsyncPortScanner(self.domain).run()
 
-            crawl_results, js_results, screenshots, ports = await asyncio.gather(
+            crawl_results, dir_results, js_results, screenshots, ports = await asyncio.gather(
                 crawl_task,
+                dir_task,
                 js_task,
                 screenshot_task,
                 port_task
@@ -140,9 +152,11 @@ class ReconFramework:
             progress.update(task_id, advance=4)
 
         self.results["web_crawler"] = crawl_results
+        self.results["directories"] = dir_results
         self.results["javascript_analysis"] = js_results
         self.results["screenshots"] = screenshots
         self.results["ports"] = ports
+        
 
     def run_analysis_modules(self):
 
@@ -153,11 +167,24 @@ class ReconFramework:
         self.results["subdomains"] = SubdomainEnumerator(self.domain).run()
         self.results["ssl"] = SSLAnalyzer(self.domain).run()
         self.results["security_headers"] = HeadersAnalyzer(headers).analyze()
+        self.results["waf"] = WAFDetector(
+    headers
+).detect()
+        self.results["parameters"] = (
+    ParameterDiscovery(
+        self.results
+    ).run()
+)
 
         technologies = TechnologyFingerprinter(headers).detect()
         self.results["technologies"] = technologies
 
         self.results["cves"] = CVEMapper(technologies).map_cves()
+        self.results["risk_analysis"] = (
+    RiskEngine(
+        self.results
+    ).analyze()
+)
 
     def run_ai_analysis(self):
 

@@ -1,72 +1,167 @@
-import concurrent.futures
-from typing import List
-
-import httpx
+import requests
 
 from utils.logger import logger
 
 
-COMMON_SUBDOMAINS = [
-    "www",
-    "mail",
-    "api",
-    "dev",
-    "test",
-    "admin",
-    "vpn",
-    "portal",
-    "staging",
-    "beta"
-]
-
-
 class SubdomainEnumerator:
 
-    def __init__(self, domain: str):
+    def __init__(self, domain):
 
         self.domain = domain
 
-    def check_subdomain(
-        self,
-        subdomain: str
-    ):
+        self.results = set()
 
-        url = f"https://{subdomain}.{self.domain}"
+    def crtsh(self):
 
         try:
-            response = httpx.get(
+
+            logger.info(
+                "Querying crt.sh"
+            )
+
+            url = (
+                "https://crt.sh/"
+                f"?q=%.{self.domain}"
+                "&output=json"
+            )
+
+            response = requests.get(
                 url,
-                timeout=3
+                timeout=20
             )
 
-            return {
-                "subdomain": url,
-                "status": response.status_code
-            }
+            if response.status_code != 200:
+                return
 
-        except Exception:
-            return None
+            data = response.json()
 
-    def run(self) -> List:
+            for entry in data:
 
-        discovered = []
+                name = entry.get(
+                    "name_value",
+                    ""
+                )
 
-        with concurrent.futures.ThreadPoolExecutor(
-            max_workers=20
-        ) as executor:
+                for sub in name.split("\n"):
 
-            results = executor.map(
-                self.check_subdomain,
-                COMMON_SUBDOMAINS
+                    sub = sub.strip()
+
+                    if (
+                        self.domain in sub
+                    ):
+
+                        self.results.add(
+                            sub
+                        )
+
+        except Exception as error:
+
+            logger.warning(
+                f"crt.sh failed: {error}"
             )
 
-            for result in results:
+    def hackertarget(self):
 
-                if result:
-                    discovered.append(result)
+        try:
+
+            logger.info(
+                "Querying HackerTarget"
+            )
+
+            url = (
+                "https://api.hackertarget.com/"
+                f"hostsearch/?q={self.domain}"
+            )
+
+            response = requests.get(
+                url,
+                timeout=20
+            )
+
+            if response.status_code != 200:
+                return
+
+            lines = response.text.splitlines()
+
+            for line in lines:
+
+                if "," not in line:
+                    continue
+
+                subdomain = (
+                    line.split(",")[0]
+                )
+
+                self.results.add(
+                    subdomain
+                )
+
+        except Exception as error:
+
+            logger.warning(
+                (
+                    "HackerTarget failed: "
+                    f"{error}"
+                )
+            )
+
+    def common_permutations(self):
+
+        common = [
+
+            "dev",
+            "api",
+            "test",
+            "staging",
+            "mail",
+            "vpn",
+            "beta",
+            "admin",
+            "cdn",
+            "portal",
+            "dashboard",
+            "app",
+            "mobile",
+            "internal"
+        ]
+
+        for sub in common:
+
+            self.results.add(
+                f"{sub}.{self.domain}"
+            )
+
+    def run(self):
 
         logger.info(
-            f"Subdomain scan completed for {self.domain}"
+            (
+                f"Starting subdomain "
+                f"enumeration for "
+                f"{self.domain}"
+            )
         )
 
-        return discovered
+        self.crtsh()
+
+        self.hackertarget()
+
+        self.common_permutations()
+
+        final = sorted(
+            list(self.results)
+        )
+
+        logger.info(
+            (
+                f"Discovered "
+                f"{len(final)} "
+                f"subdomains"
+            )
+        )
+
+        return {
+
+            "total": len(final),
+
+            "subdomains": final
+        }
